@@ -2,13 +2,19 @@
 import Image from "next/image";
 import Link from "next/link"
 import { Code, Palette, Rocket, Users, Zap, Star  } from 'lucide-react'
+import graphic from '../../public/graphic.jpg'
+import video from '../../public/video.jpg'
+import dir from '../../public/dir.jpg'
+import ceo from '../../public/ceo.webp'
+import fro from '../../public/fro.jpeg'
+import social from '../../public/social.jpg'
 
 const testimonials = [
   {
     name: "Sarah Mitchell",
     role: "Marketing Director",
     company: "TechVision Inc",
-    image: "/dir.jpg",
+    image: dir,
     quote: "Their digital strategy transformed our online presence. The team delivered exceptional results, from brand redesign to implementing cutting-edge web solutions. A true digital partner!",
     rating: 5
   },
@@ -16,7 +22,7 @@ const testimonials = [
     name: "David Chen",
     role: "Founder & CEO",
     company: "InnovateLab",
-    image: "/ceo.webp",
+    image: ceo,
     quote: "The creative solutions and digital expertise they brought to our project exceeded expectations. Their strategic approach to digital transformation was exactly what we needed.",
     rating: 5
   },
@@ -24,7 +30,7 @@ const testimonials = [
     name: "Emma Rodriguez",
     role: "Product Manager",
     company: "FutureScale",
-    image: "/fro.jpeg",
+    image: fro,
     quote: "Outstanding digital agency! Their innovative approach to UX design and digital marketing strategies helped us achieve record-breaking engagement rates.",
     rating: 4
   }
@@ -203,7 +209,7 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur-xl opacity-25 group-hover:opacity-50 transition duration-1000" />
               <div className="relative">
                 <Image
-                  src="/social.jpg"
+                  src={social}
                   alt="Digital Solutions"
                   width={600}
                   height={400}
@@ -323,7 +329,7 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl blur-xl opacity-25 group-hover:opacity-75 transition duration-1000" />
               <div className="relative">
                 <Image
-                  src="/graphic.jpg"
+                  src={graphic}
                   alt="Templates with Tailwind"
                   width={800}
                   height={600}
@@ -370,7 +376,7 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur-xl opacity-25 group-hover:opacity-75 transition duration-1000" />
               <div className="relative">
                 <Image
-                  src="/video.jpg"
+                  src={video}
                   alt="Modern Elegance"
                   width={800}
                   height={600}

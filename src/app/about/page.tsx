@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import choose from '../../public/choose.jpg'
+import welcome from '../../public/welcome.jpg'
 
 export default function AboutPage() {
   const stats = [
@@ -22,7 +24,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/welcome.jpg?height=1080&width=1920"
+          src={welcome}
           alt="Agency team working"
           fill
           className="object-cover mt-20"
@@ -189,7 +191,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/choose.jpg?height=800&width=500"
+                src={choose}
                 alt="Team collaboration"
                 fill
                 className="object-cover"

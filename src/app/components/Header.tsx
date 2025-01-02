@@ -2,6 +2,9 @@
 import Link from 'next/link'
 import React from 'react'
 import { useState } from "react"
+import logo from '../../public/logo.png'
+import Image from 'next/image'
+
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +20,7 @@ export default function Header() {
           >
             <div className="absolute -inset-1  rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-200" />
             <span className="relative text-2xl font-bold bg-clip-text text-transparent ">
-              <img src="/logo.png" alt="logo" className="w-40" />
+              <Image src={logo} alt="logo" className="w-40" />
             </span>
           </Link>
 

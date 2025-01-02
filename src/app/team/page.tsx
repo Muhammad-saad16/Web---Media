@@ -1,10 +1,13 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image';
+import afsheen from '../public/afsheen.jpg';
+import mohsin from '../public/mohsin.jpg';
+import abubakar from '../public/abubakar.jpg';
 
 interface TeamMember {
   name: string;
   role: string;
   expertise: string[];
-  image: string;
+  image: StaticImageData | string; // Updated to accommodate StaticImageData
   socialLinks: {
     linkedin?: string;
     twitter?: string;
@@ -19,7 +22,7 @@ export default function Page() {
       name: "Miss Afsheen",
       role: "CEO and Director of Agency",
       expertise: ["Full-Stack Developer", "E-commerce specialist" , "Social Media Marketer",],
-      image: "/afsheen.jpg",
+      image: afsheen,
       socialLinks: {
         linkedin: "https://www.linkedin.com/in/afsheen-imran-b623a42a2/",
       }
@@ -28,7 +31,7 @@ export default function Page() {
       name: "Mohsin Raza",
       role: "Director of Agency",
       expertise: ["UI/UX Design", "SEO Expert", "Full-Stack Developer" ],
-      image: "/mohsin.jpg",
+      image: mohsin,
       socialLinks: {
         linkedin: "https://www.linkedin.com/in/mohsin-raza-a514392b6/",
       }
@@ -37,7 +40,7 @@ export default function Page() {
       name: "Abu-Bakar",
       role: "Full Stack Developer",
       expertise: ["Full-Stack Developer", "UI/UX Design", "Cloud Architecture"],
-      image: "/abu-bakar.jpg",
+      image: abubakar,
       socialLinks: {
         linkedin: "https://www.linkedin.com/in/abubaker-siddique-4624422b9/",
       }
