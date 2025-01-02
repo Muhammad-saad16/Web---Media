@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link"
 import { Code, Palette, Rocket, Users, Zap, Star  } from 'lucide-react'
-import graphic from '../../public/graphic.jpg'
-import video from '../../public/video.jpg'
-import dir from '../../public/dir.jpg'
-import ceo from '../../public/ceo.webp'
-import fro from '../../public/fro.jpeg'
-import social from '../../public/social.jpg'
+import graphic from '../../../public/graphic.jpg'
+import video from '../../../public/video.jpg'
+import dir from '../../../public/dir.jpg'
+import ceo from '../../../public/ceo.webp'
+import fro from '../../../public/fro.jpeg'
+import social from '../../../public/social.jpg'
 
 const testimonials = [
   {

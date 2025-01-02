@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
-import afsheen from '../public/afsheen.jpg';
-import mohsin from '../public/mohsin.jpg';
-import abubakar from '../public/abubakar.jpg';
+import afsheen from '../../../public/afsheen.jpg';
+import mohsin from '../../../public/mohsin.jpg';
+import abubakar from '../../../public/abubakar.jpg';
 
 interface TeamMember {
   name: string;

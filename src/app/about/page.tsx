@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import choose from '../../public/choose.jpg'
-import welcome from '../../public/welcome.jpg'
+import choose from '../../../public/choose.jpg'
+import welcome from '../../../public/welcome.jpg'
 
 export default function AboutPage() {
   const stats = [

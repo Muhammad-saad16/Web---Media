@@ -1,8 +1,6 @@
 'use client'
-
-import { useState } from 'react'
-import Image from 'next/image'
-
+import { useState } from 'react';
+import Image from 'next/image';
 interface Project {
     id: number;
     title: string;
@@ -12,7 +10,6 @@ interface Project {
     technologies: string[];
     link?: string;
 }
-
 export default function Page() {
     const [activeProject, setActiveProject] = useState<number | null>(null);
 
